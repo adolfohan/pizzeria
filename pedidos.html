@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/pizza.png">
+    <link rel='stylesheet' href='styles.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Hacé tu pedido</title>
+</head>
+<body class="body-c">
+    <header id="header">
+        <img src="./images/logo.png" height="50">
+        <a href="./index.html">Productos</a>
+        <a href="./conozcanos.html">Conózcanos</a>
+        <a href="./pedidos.html">Hacé tu pedido</a>
+    </header>
+
+    <form action="mailto:han.adolfo@gmail.com" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Datos de envío:</legend>
+                <label class="label-datos">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required
+                oninvalid="this.setCustomValidity('Ingrese su nombre')"><br>
+                <label class="label-datos">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" required
+                oninvalid="this.setCustomValidity('Ingrese su apellido')"><br>
+                
+                <label class="label-datos">Dirección:</label>
+                <input type="text" name="direccion" id="dirección" required
+                oninvalid="this.setCustomValidity('Ingrese una dirección')"><br>
+                <label class="label-datos">Teléfono:</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="11-1111-1111" pattern="[0-9]{2}-[1-9]{4}-[0-9]{4}" required
+                oninvalid="this.setCustomValidity('Ingrese un teléfono')">
+                <small>Formato: 11-1111-1111</small><br>
+                <label class="label-datos">Email:</label>
+                <input type="email" name="email" id="email" required
+                oninvalid="this.setCustomValidity('Ingrese un email')"><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>¿Qué vas a querer?</legend>
+            <p>Pizzas:</p>
+            <input type="checkbox" id="deLaCasa" name="deLaCasa" value="01 - De La Casa">
+            <label for="vehicle1"> 01 - De La Casa</label><br>
+            <input type="checkbox" id="muzzarella" name="muzzarella" value="02 - Muzzarella">
+            <label for="vehicle2"> 02 - Muzzarella</label><br>
+            <input type="checkbox" id="fugazza" name="fugazza" value="03 - Fugazza">
+            <label for="vehicle3"> 03 - Fugazza</label><br>
+            <input type="checkbox" id="jamonymorrones" name="jamonymorrones" value="04 - Jamón y Morrones">
+            <label for="vehicle3"> 04 - Jamón y Morrones</label><br>
+            <input type="checkbox" id="napolitana" name="napolitana" value="05 - Napolitana">
+            <label for="vehicle3"> 05 - Napolitana</label><br><br>
+            <p>Empanadas:</p>
+            <input type="checkbox" id="carne" name="carne" value="Carne">
+            <label for="vehicle1"> CS - Carne</label><br>
+            <input type="checkbox" id="pollo" name="pollo" value="P - Pollo">
+            <label for="vehicle2"> P - Pollo</label><br>
+            <input type="checkbox" id="jamonyqueso" name="jamonyqueso" value="JQ - Jamón y Queso">
+            <label for="vehicle3"> JQ - Jamón y Queso</label><br>
+            <input type="checkbox" id="verdura" name="verdura" value="V - Verdura">
+            <label for="vehicle3"> V - Verdura</label><br>
+            <input type="checkbox" id="capresse" name="capresse" value="CA - Caprese">
+            <label for="vehicle3"> CA - Caprese</label><br>
+            <input type="checkbox" id="humita" name="humita" value="H - Humita">
+            <label for="vehicle3"> H - Humita</label><br>
+            <input type="checkbox" id="atun" name="atun" value="A - Atún">
+            <label for="vehicle3"> A - Atún</label><br><br>
+            <p>Sandwiches:</p>
+            <input type="checkbox" id="s1" name="s1" value="S1 - Para 2 personas">
+            <label for="vehicle1"> S1 - Para 2 personas</label><br>
+            <input type="checkbox" id="s2" name="s2" value="S2 - Para 2 personas">
+            <label for="vehicle1"> S2 - Para 2 personas</label><br>
+            <input type="checkbox" id="s3" name="s3" value="S3 - Para 3 personas">
+            <label for="vehicle1"> S3 - Para 2 personas</label><br>
+            <input type="checkbox" id="s4" name="s4" value="S4 - Para 3 personas">
+            <label for="vehicle1"> S4 - Para 3 personas</label><br><br>
+
+            <label>Comentarios:</label><br>
+            <textarea name="yourMessage" cols="50" rows="5"></textarea><br>
+            <input type="submit" value="Enviar pedido">
+            <input type="submit" formaction="./index.html" value="Cancelar pedido">
+        </fieldset>
+        
+    
+    </form>
+
+    <footer class="footer-c">
+        <a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook.png" height="30"></a>
+        <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="./images/instagram.png" height="30"></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"><img src="./images/twitter.png" height="30"></a>
+        <p>Contacto: 0101010101 - pizzeriacode@mail.com</p>
+    </footer>
+</body>
+</html>

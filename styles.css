@@ -1,0 +1,121 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+    color: #000000;
+    text-decoration: none;
+    margin: 0;
+    transition: .15s;
+}
+
+header{
+    background-color: #c90808;
+    font-size: larger;
+    font-weight: bolder;
+    height: 100%;
+    top: 0;
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+header a{
+    margin-left: 10px;
+}
+
+header a:hover{
+    color: #fbaa04;
+}
+
+nav{
+    background-color: #fae283;
+    font-size: large;
+    display: flex;
+    padding: 3.5px;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+nav a:hover{
+    color: #d7423c;
+    cursor: pointer;
+}
+
+main {
+    background-color: #f3b538;
+    padding: 25px;
+ }
+ 
+h1{
+    text-align: center;
+
+}
+
+h3{
+    display: inline-block;
+}
+
+h3:hover{
+    color: #c90808;
+    cursor: pointer;
+}
+
+#empanadas{
+    text-align: center;
+}
+
+footer{
+    background-color: #c90808;
+    height: 50px;
+    font-size: larger;
+    font-weight: bolder;
+    bottom: 0;
+    padding: 25px;
+    border-top: 2px solid black;
+}
+
+footer img{
+    height: 30px;
+}
+
+footer img:hover{
+    opacity: .7;
+}
+
+.body-c{
+    background-color: #f3b538;
+    margin-bottom: 120px;
+
+
+}
+
+.p-conozcanos{
+    font-size: 20px;
+    margin: 30px 10px;
+    text-align: justify;
+}
+
+.footer-c{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.label-datos{
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px 6px;
+    text-align: right;
+    width: 100px;
+    vertical-align: top;
+}
+
+legend{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
